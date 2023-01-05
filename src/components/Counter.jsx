@@ -6,10 +6,8 @@ const Counter = () => {
   const {increment, decrement, reset, setValue, count} = useCounter()
  
   return (
+    <>
     <main className="main">
-      <button className="nav-btn">
-        <Link  to='/reducer'>Go to reducer counter</Link>
-      </button>
       <div className="container">
         <h1>Custom Counter</h1>
           <input
@@ -18,7 +16,7 @@ const Counter = () => {
             value={count}
             onChange={(e) => setValue(e)}
             placeholder='0'
-          />
+            />
         <div className="count-btns">
           <button onClick={increment}>increase</button>
           <button onClick={reset}>reset</button>
@@ -26,6 +24,7 @@ const Counter = () => {
         </div>
       </div>
     </main>
+            </>
   );
 };
 

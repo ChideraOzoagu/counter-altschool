@@ -39,11 +39,9 @@ const Reducer = () => {
 
   return (
     <main className="main reducer">
-        <button className="nav-btn">
-            <Link to='/'>Go to Custom hook counter</Link>
-        </button>
+
       <div className="container">
-        <h1>Reducer Counter</h1>
+        <h1>useReducer Counter</h1>
         <input
           type="number"
           className="value"
